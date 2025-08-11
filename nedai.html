@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NED AI — Education & Tool Suite for Board Oversight (Early Access)</title>
+  <meta name="description" content="Education-first, board-ready AI governance for UK NEDs. Learn what to oversee, then apply it with a secure conversational tool to produce company-specific artefacts." />
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; }
+    body { background:#fff; color:#000; }
+    .bw-border { border-color:#000 !important; }
+    .bw-card { border:1px solid #000; }
+    .section-kicker { letter-spacing:.1em; text-transform:uppercase; font-size:.8rem; color:#000; }
+    .hero-lede { font-size:1.15rem; }
+    .pill { border:1px solid #000; border-radius:2rem; padding:.25rem .6rem; font-size:.85rem; }
+    .sticky-cta { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid #000; z-index:1030; }
+    .accordion-button:not(.collapsed) { background:#f7f7f7; color:#000; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-white border-bottom border-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">NED AI</a>
+      <a class="btn btn-dark" href="#register">Register</a>
+    </div>
+  </nav>
+
+  <header class="py-5 border-bottom border-dark">
+    <div class="container">
+      <span class="section-kicker d-inline-block mb-2">Early Access</span>
+      <h1 class="display-5 fw-bold">AI is now a board matter. Learn it. Apply it. Deliver oversight.</h1>
+      <p class="hero-lede mt-3 mb-4">
+        You’re a Non‑Executive Director — your job is <em>oversight</em>, not operations. AI isn’t another IT upgrade; it changes risk, controls, assurance and ethics. <strong>NED AI</strong> is an <strong>education‑first</strong> programme with a built‑in <strong>tool suite</strong>: learn what good AI oversight looks like, then use a secure conversational assistant to apply it to <em>your</em> board and produce <em>board‑ready artefacts</em>.
+      </p>
+      <div class="d-flex gap-2 flex-wrap mb-3" aria-label="Audience">
+        <span class="pill">NEDs</span>
+        <span class="pill">Chairs</span>
+        <span class="pill">Company Secretaries</span>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="p-3 bw-card h-100">
+            <div class="section-kicker mb-1">Learn</div>
+            <h3 class="h5">Education</h3>
+            <p class="mb-0">Board‑level modules: UK governance expectations, AI risk & internal control, assurance options, ethics, workforce impact.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bw-card h-100">
+            <div class="section-kicker mb-1">Apply</div>
+            <h3 class="h5">Your Context</h3>
+            <p class="mb-0">Securely add public board artefacts. The tutor uses your docs + a curated governance library to guide you.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bw-card h-100">
+            <div class="section-kicker mb-1">Deliver</div>
+            <h3 class="h5">Board‑ready</h3>
+            <p class="mb-0">Export a charter addendum, AI risk entries, a board calendar insert, a Responsible AI policy starter, and question banks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <section class="mb-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="h3 mb-3">What you’ll learn & what you’ll make</h2>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-3 bw-card h-100">
+                  <div class="section-kicker mb-1">Learn</div>
+                  <ul class="mb-0 ps-3">
+                    <li>Board duties for AI oversight (challenge, risk, controls, assurance)</li>
+                    <li>The AI landscape (models, vendors, deployment options)</li>
+                    <li>Policy, privacy, IP, ethics, workforce impact</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 bw-card h-100">
+                  <div class="section-kicker mb-1">Make</div>
+                  <ul class="mb-0 ps-3">
+                    <li>AI oversight <strong>charter addendum</strong> (Audit/Tech/Board)</li>
+                    <li><strong>AI risk register</strong> entries aligned to your sector</li>
+                    <li><strong>Board calendar insert</strong> with reporting cadence</li>
+                    <li><strong>Responsible AI policy</strong> starter</li>
+                    <li><strong>Vendor diligence</strong> questionnaire & <strong>agent governance</strong> checklist</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 bw-card">
+              <h2 id="register" class="h4">Register your interest</h2>
+              <form class="row g-3" method="post" action="#" onsubmit="return submitLead(event)">
+                <div class="col-12">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" placeholder="you@board.co.uk" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Are you a NED?</label>
+                  <select class="form-select" name="is_ned" required>
+                    <option value="">Select…</option>
+                    <option>Yes</option>
+                    <option>No, aspiring</option>
+                    <option>Company Secretary / Adviser</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Organisation / Board (optional)</label>
+                  <input type="text" class="form-control" name="org" placeholder="e.g., FTSE / NHS Trust / Housing Association">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="yes" id="consent" required>
+                    <label class="form-check-label" for="consent">
+                      I consent to receive launch updates and early‑bird access by email.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-dark">Register interest</button>
+                </div>
+                <div id="formMsg" class="col-12" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="h3 mb-3">Built around what NEDs actually do</h2>
+        <div class="row g-3">
+          <div class="col-md-4"><div class="p-3 bw-card h-100"><h3 class="h6">Independent challenge</h3><p class="mb-0">Prompted questions for strategy, investments, assurance and ethics — tailored to your sector.</p></div></div>
+          <div class="col-md-4"><div class="p-3 bw-card h-100"><h3 class="h6">Risk & controls</h3><p class="mb-0">Clarify AI risks; update internal controls; plan reporting lines and review cadence.</p></div></div>
+          <div class="col-md-4"><div class="p-3 bw-card h-100"><h3 class="h6">Board hygiene</h3><p class="mb-0">Committee ownership, division of responsibilities, time commitment and evaluation prompts.</p></div></div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="h3 mb-3">AI topics — concise & board‑relevant</h2>
+        <div class="accordion" id="aiTopics">
+          <div class="accordion-item border-dark">
+            <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#topicLLM">LLM essentials & the marketplace</button></h2>
+            <div id="topicLLM" class="accordion-collapse collapse show" data-bs-parent="#aiTopics">
+              <div class="accordion-body">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <ul class="mb-0 ps-3">
+                      <li>What an LLM is; tokens & context windows; strengths & limits</li>
+                      <li>Training vs fine‑tuning vs <abbr title="Retrieval‑Augmented Generation">RAG</abbr> vs inference</li>
+                      <li>Safety & governance: hallucinations, data leakage, prompt injection; IP & privacy</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="mb-0 ps-3">
+                      <li>Who’s who: OpenAI/ChatGPT, Anthropic/Claude, Google/Gemini, Microsoft/Copilot, Meta/Llama, AWS/Bedrock, Cohere/Command, Mistral/Mixtral</li>
+                      <li>Deployment: APIs, SaaS copilots, private/self‑hosted models</li>
+                      <li>Vendor assessment: assurance, privacy posture, pricing & lock‑in</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-dark">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topicBeyond">Beyond LLMs</button></h2>
+            <div id="topicBeyond" class="accordion-collapse collapse" data-bs-parent="#aiTopics">
+              <div class="accordion-body">
+                <div class="row g-3">
+                  <div class="col-md-4"><div class="bw-card p-3 h-100"><strong>Classical ML & vision</strong><br>Regression, trees, clustering; CNNs/Transformers for images; OCR & document AI.</div></div>
+                  <div class="col-md-4"><div class="bw-card p-3 h-100"><strong>Generation models</strong><br>Diffusion, GANs, VAEs for image/video/audio; strengths, risks, evidence to ask for.</div></div>
+                  <div class="col-md-4"><div class="bw-card p-3 h-100"><strong>Reinforcement & RLHF</strong><br>Where it shows up (recommendations, control) and oversight implications.</div></div>
+                  <div class="col-md-4"><div class="bw-card p-3 h-100 mt-3 mt-md-0"><strong>Recommenders & forecasting</strong><br>Personalisation, propensity, demand; bias, explainability, monitoring.</div></div>
+                  <div class="col-md-4"><div class="bw-card p-3 h-100 mt-3 mt-md-0"><strong>Data & deployment</strong><br>RAG vs fine‑tuning, vector stores, MLOps, third‑party risk, avoiding lock‑in.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-dark">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topicAgents">AI Agents — orchestration, autonomy & oversight</button></h2>
+            <div id="topicAgents" class="accordion-collapse collapse" data-bs-parent="#aiTopics">
+              <div class="accordion-body">
+                <div class="row g-3">
+                  <div class="col-md-4"><div class="bw-card p-3 h-100"><strong>What they are</strong><br>LLM‑driven systems that plan steps, call tools/APIs, and act on data for research, reporting and workflow automation.</div></div>
+                  <div class="col-md-4"><div class="bw-card p-3 h-100"><strong>Risks</strong><br>Autonomy creep, prompt injection, data exfiltration, looping/cost runaways, weak audit trails, third‑party tool risk.</div></div>
+                  <div class="col-md-4"><div class="bw-card p-3 h-100"><strong>Controls</strong><br>Human‑in‑the‑loop approvals, scoped permissions, budgets/timeouts, sandboxing, immutable logs, evaluation/red‑team results.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-dark">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topicFrontier">Frontier terms: AGI & Superintelligence</button></h2>
+            <div id="topicFrontier" class="accordion-collapse collapse" data-bs-parent="#aiTopics">
+              <div class="accordion-body">
+                <div class="row g-3">
+                  <div class="col-md-6"><div class="bw-card p-3 h-100"><strong>Plain definitions</strong><br>Clear, non‑hyped explanations of AGI and Superintelligence — what’s consensus, what’s speculative.</div></div>
+                  <div class="col-md-6"><div class="bw-card p-3 h-100"><strong>Board stance</strong><br>Reflect frontier risk/opportunity in risk appetite, disclosures, and scenario planning.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-dark">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topicMultimodal">Multimodal — see it, hear it, try it</button></h2>
+            <div id="topicMultimodal" class="accordion-collapse collapse" data-bs-parent="#aiTopics">
+              <div class="accordion-body">
+                <div class="row g-3">
+                  <div class="col-md-6"><div class="bw-card p-3 h-100"><strong>Hands‑on demos</strong><br>Short, optional exercises: text→image, text→video, text→speech. Fun, memorable, practical.</div></div>
+                  <div class="col-md-6"><div class="bw-card p-3 h-100"><strong>Governance caveats</strong><br>Copyright, consent, bias, safety, disclosure — what policies must cover.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="h3 mb-3">Privacy & CPD</h2>
+        <div class="row g-3">
+          <div class="col-md-6"><div class="p-3 bw-card h-100"><h3 class="h6">Privacy by design</h3><p class="mb-0">Your uploaded context is private to you and used only to personalise outputs. Detailed data policy will be published before launch.</p></div></div>
+          <div class="col-md-6"><div class="p-3 bw-card h-100"><h3 class="h6">CPD alignment</h3><p class="mb-0">Designed for UK NEDs. We’re pursuing CPD recognition with leading bodies; early access registrants get updates first.</p></div></div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="h3 mb-3">FAQ</h2>
+        <div class="row g-3">
+          <div class="col-md-6"><div class="p-3 bw-card h-100"><h3 class="h6">Is this operational training?</h3><p class="mb-0">No. It’s board‑level oversight. Learn what to ask for, what evidence to expect, and which artefacts to table.</p></div></div>
+          <div class="col-md-6"><div class="p-3 bw-card h-100"><h3 class="h6">Is my data private?</h3><p class="mb-0">Yes. Your uploads sit in a private store to personalise your outputs. Controls and policies will be documented before launch.</p></div></div>
+          <div class="col-md-6"><div class="p-3 bw-card h-100"><h3 class="h6">When does it launch?</h3><p class="mb-0">Soon. Join the list for early‑bird places and pricing.</p></div></div>
+          <div class="col-md-6"><div class="p-3 bw-card h-100"><h3 class="h6">Who is this for?</h3><p class="mb-0">Current and aspiring NEDs, Chairs, and Company Secretaries who want education plus a practical tool suite.</p></div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="border-top border-dark py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <div>NED AI — Education + Tool Suite (Early Access)</div>
+      <div class="small text-body">Black & white prototype. Replace form action with your email tool (Mailchimp/ConvertKit) or a serverless handler.</div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="small">Education first. Tool suite included. Leave with board‑ready artefacts.</div>
+      <a class="btn btn-dark" href="#register">Join early access</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function submitLead(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form).entries());
+      try{
+        const list = JSON.parse(localStorage.getItem('nedai_leads')||'[]');
+        list.push({...data, ts:new Date().toISOString()});
+        localStorage.setItem('nedai_leads', JSON.stringify(list));
+        document.getElementById('formMsg').innerHTML = '<div class="alert alert-success mt-2 bw-border" role="status">Thanks — you\'re on the list. We\'ll be in touch soon.</div>';
+        form.reset();
+      }catch(err){
+        document.getElementById('formMsg').innerHTML = '<div class="alert alert-success mt-2 bw-border" role="status">Registered (prototype).</div>';
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
