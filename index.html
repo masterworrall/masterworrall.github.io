@@ -65,6 +65,22 @@
             margin-right: auto;
         }
 
+        .cta-section {
+            background: #444;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
         .footer {
             background-color: #262626;
             color: #999;
@@ -86,6 +102,10 @@
                 font-size: 1rem;
                 padding: 0 1rem;
             }
+
+            .cta-section h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -97,7 +117,7 @@
             <div class="text-center">
                 <div class="brand">
                     <h1>INTERITION<span class="trademark">®</span></h1>
-                    <div class="tagline">USE YOURS.</div>
+                    <div class="tagline">Keep it to yourself.</div>
                 </div>
             </div>
         </div>
@@ -113,6 +133,30 @@
                         <p class="lead mb-4">In the age of AI, it's not what you know that defines your value — it's your lived experience and that will be stored somewhere and by someone.</p>
                         <p class="lead">Interition gives you ownership of that memory. You decide where it is stored, how it's used, which apps and services can access it.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="text-center mb-4">
+                        <h2 class="h3 mb-3">Learn More</h2>
+                        <p class="lead">Join our mailing list and find out how you can keep yourself in the age of AI.</p>
+                    </div>
+                    <form action="https://formspree.io/f/xwpqynkb" method="POST" class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" name="email" class="form-control form-control-lg bg-dark text-white border-secondary"
+                                placeholder="Enter your email" required>
+                            <button class="btn btn-outline-light px-4" type="submit">Subscribe</button>
+                        </div>
+                        <div class="text-center small text-muted">
+                            <p class="mb-0">We respect your privacy and will never share your information.</p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
