@@ -93,6 +93,46 @@
             font-size: 0.9rem;
         }
 
+        /* Quote panel (matches page dark theme with orange accent) */
+        .quote-panel {
+            background: transparent;
+            padding: 2.5rem 0;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote-panel blockquote {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 1.5;
+            font-style: italic;
+            quotes: """ """ "'" "'";
+        }
+
+        .quote-panel blockquote::before,
+        .quote-panel blockquote::after {
+            content: none;
+        }
+
+        .quote-panel .quote-author {
+            margin-top: 0.75rem;
+            font-size: 0.95rem;
+            color: #fff;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .quote-panel .quote-context {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #999;
+            font-weight: 400;
+            text-align: right;
+            font-style: normal;
+        }
+        /* end quote panel */
+
         @media (max-width: 768px) {
             .brand h1 {
                 font-size: 2.5rem;
@@ -118,6 +158,21 @@
                 <div class="brand">
                     <h1>INTERITION<span class="trademark">®</span></h1>
                     <div class="tagline">Keep yourself</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Panel: place before the Learn More / three-panel section -->
+    <section class="quote-panel">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <blockquote>
+                        "What you really don't want is someone to be able to exfiltrate from your personal model that knows everything about you."
+                    </blockquote>
+                    <div class="quote-author">— Sam Altman</div>
+                    <div class="quote-context">CEO, OpenAI</div>
                 </div>
             </div>
         </div>
